@@ -35,7 +35,7 @@ class BranchTiles extends StatelessWidget {
             gradient: LinearGradient(
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
-                colors: [color.withOpacity(.7), color]),
+                colors: [color.withOpacity(1.0), color]),
             borderRadius: BorderRadius.circular(15)),
       ),
     );

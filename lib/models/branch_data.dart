@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/branch_model.dart';
 
-const Branch = const [
+const Branch =  [
   BranchModel(
     id: 'b1',
     title: 'CSE',

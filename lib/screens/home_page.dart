@@ -57,8 +57,12 @@ class _HomePageState extends State<HomePage> {
         items: <BubbleBottomBarItem>[
           BubbleBottomBarItem(
             backgroundColor: Colors.yellow[500],
-            icon: Icon(Icons.home_outlined),
-            activeIcon: Icon(Icons.home_filled),
+            icon: Icon(
+              Icons.home_outlined,
+            ),
+            activeIcon: Icon(
+              Icons.home_filled,
+            ),
             title: Text('Home'),
           ),
           BubbleBottomBarItem(

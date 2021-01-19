@@ -72,6 +72,12 @@ flutter:
     - assets/icons/globe.png
     - assets/icons/instagram.png
     - assets/icons/facebook.png
+    - assets/images/vishal.jpg
+    - assets/images/amani.jpg
+    - assets/images/atharva.jpg
+    - assets/images/aakriti.jpg
+    - assets/images/pavan.jpg
+    - assets/images/deepika.jpg
    
 
   # An image asset can refer to one or more resolution-specific "variants", see
