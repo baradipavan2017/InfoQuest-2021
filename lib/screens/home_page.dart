@@ -36,40 +36,45 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // backgroundColor: Colors.transparent,
       appBar: AppBar(
-        title: Text(_pages[_currentIndex]['title']),
+        title: Text(
+          _pages[_currentIndex]['title'],
+          style: TextStyle(color: Colors.black),
+        ),
+        backgroundColor: Colors.transparent,
         elevation: 0.0,
-        backgroundColor: Colors.amber[300],
+        iconTheme: IconThemeData(color: Colors.black),
       ),
       drawer: AppDrawer(),
       bottomNavigationBar: BubbleBottomBar(
         opacity: 0,
         currentIndex: _currentIndex,
         onTap: _changePage,
-        backgroundColor: Colors.amber[300],
+        backgroundColor: Color.fromRGBO(23, 23, 23, 7),
         elevation: 8,
         borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
         items: <BubbleBottomBarItem>[
           BubbleBottomBarItem(
-            backgroundColor: Colors.amber[900],
+            backgroundColor: Colors.yellow[500],
             icon: Icon(Icons.home_outlined),
             activeIcon: Icon(Icons.home_filled),
             title: Text('Home'),
           ),
           BubbleBottomBarItem(
-            backgroundColor: Colors.amber[900],
+            backgroundColor: Colors.yellow[500],
             icon: Icon(Icons.emoji_events_outlined),
             activeIcon: Icon(Icons.emoji_events),
             title: Text('Events'),
           ),
           BubbleBottomBarItem(
-            backgroundColor: Colors.amber[900],
+            backgroundColor: Colors.yellow[500],
             icon: Icon(Icons.person_outline),
             activeIcon: Icon(Icons.person),
             title: Text('Guests'),
           ),
           BubbleBottomBarItem(
-            backgroundColor: Colors.amber[900],
+            backgroundColor: Colors.yellow[500],
             icon: Icon(Icons.people_alt_outlined),
             activeIcon: Icon(Icons.people),
             title: Text('Teams'),
