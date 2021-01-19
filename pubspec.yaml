@@ -54,6 +54,24 @@ flutter:
     - assets/images/CG3.jpg
     - assets/images/c5.jpg
     - assets/images/c4.jpg
+    - assets/icons/civil.png
+    - assets/icons/cse.png
+    - assets/icons/ece.png
+    - assets/icons/ecm.png
+    - assets/icons/eee.png
+    - assets/icons/it.png
+    - assets/icons/mech.png
+    - assets/icons/mech.png
+    - assets/icons/coding.png
+    - assets/icons/trophy.png
+    - assets/icons/hackathon.png
+    - assets/icons/cup.png
+    - assets/icons/medal.png
+    - assets/icons/target.png
+    - assets/icons/infoquest.png
+    - assets/icons/globe.png
+    - assets/icons/instagram.png
+    - assets/icons/facebook.png
    
 
   # An image asset can refer to one or more resolution-specific "variants", see
