@@ -12,7 +12,7 @@ class EventsScreen extends StatelessWidget {
           .toList(),
       gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
         maxCrossAxisExtent: 200,
-        childAspectRatio: 3 / 2,
+        childAspectRatio: 8 / 7,
         crossAxisSpacing: 20,
         mainAxisSpacing: 20,
       ),
