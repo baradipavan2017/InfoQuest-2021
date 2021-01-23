@@ -1,5 +1,4 @@
-import '../models/branch_model.dart';
-
+import 'guest_model.dart';
 const Guest = const [
   GuestModel(
     id: 'g1',
