@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../screens/bramch_events_screen.dart';
 
 class BranchTiles extends StatelessWidget {
   final String id;
@@ -6,10 +7,16 @@ class BranchTiles extends StatelessWidget {
   final String image;
   final Color color;
   BranchTiles(this.id, this.title, this.image, this.color);
+  
+  void selectCategory(BuildContext ctx) {
+    Navigator.of(ctx).pushNamed(BranchEventsScreen.routeName,
+        arguments: {'id': id, 'title': title});
+  }
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () => selectCategory(context),
       splashColor: Theme.of(context).primaryColor,
       borderRadius: BorderRadius.circular(15),
       child: Container(

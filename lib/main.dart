@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:infoquest_2021_final/screens/bramch_events.dart';
-
+import './screens/bramch_events_screen.dart';
+import './screens/home_page.dart';
 
 void main() => runApp(InfoQuest());
 
@@ -9,7 +9,12 @@ class InfoQuest extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'InfoQuest',
-      home: BranchEvents(),
+      home: HomePage(),
+      // initialRoute: '/',
+      routes: {
+        // '/': (ctx) => HomePage(),
+        BranchEventsScreen.routeName: (ctx) => BranchEventsScreen(),
+      },
     );
   }
 }

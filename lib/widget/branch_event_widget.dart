@@ -1,30 +1,28 @@
 import 'package:flutter/material.dart';
-import 'package:infoquest_2021_final/widget/app_drawer.dart';
+import 'package:infoquest_2021_final/screens/bramch_events_screen.dart';
 
-class BranchEvents extends StatelessWidget {
-  // final String id;
-  // final String title;
-  // final String image;
-  // final List category;
-  // final String description;
-  // final String coordinator;
-  // final String prize;
-  // BranchEvents(
-  //   this.id,
-  //   this.title,
-  //   this.image,
-  //   this.category,
-  //   this.description,
-  //   this.coordinator,
-  //   this.prize,
-  // );
-
+class BranchEventWidget extends StatelessWidget {
+  final String id;
+  final String title;
+  final String image;
+  final String description;
+  final String coordinator;
+  final String prize;
+  BranchEventWidget({
+    @required this.id,
+    @required this.title,
+    @required this.image,
+    @required this.description,
+    @required this.coordinator,
+    @required this.prize,
+  });
+ 
   @override
   Widget build(BuildContext context) {
     final branchIcon = new Container(
       margin: EdgeInsets.symmetric(vertical: 16.0),
       alignment: FractionalOffset.centerLeft,
-      child: new Image.asset('assets/icons/hacker.png'),
+      child: new Image.asset(image),
       height: 100.0,
       width: 100.0,
     );
@@ -36,7 +34,7 @@ class BranchEvents extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
           Text(
-            'Code Investigation',
+            title,
             style: TextStyle(
               color: Colors.black,
               fontSize: 22.0,
@@ -46,7 +44,7 @@ class BranchEvents extends StatelessWidget {
             height: 10.0,
           ),
           Text(
-            'Coordinators:Aniketh',
+            coordinator,
             style: TextStyle(
               color: Colors.black,
               fontSize: 15.0,
@@ -60,7 +58,7 @@ class BranchEvents extends StatelessWidget {
             children: <Widget>[
               Icon(Icons.attach_money_rounded),
               Text(
-                '150',
+                prize,
                 style: TextStyle(color: Colors.black, fontSize: 15.0),
               ),
               SizedBox(
@@ -95,65 +93,58 @@ class BranchEvents extends StatelessWidget {
       ),
       child: branchContent,
     );
+
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'CSE',
-          style: TextStyle(color: Colors.black, fontSize: 20.0),
+      body: InkWell(
+        child: Container(
+          height: double.infinity,
+          margin: const EdgeInsets.symmetric(
+            vertical: 16.0,
+            horizontal: 22.0,
+          ),
+          child: ListView(padding: EdgeInsets.all(8.0), children: <Widget>[
+            Stack(
+              children: <Widget>[
+                // Text
+                branchCard,
+                //Icons
+                branchIcon
+              ],
+            ),
+            Stack(
+              children: <Widget>[
+                // Text
+                branchCard,
+                //Icons
+                branchIcon
+              ],
+            ),
+            Stack(
+              children: <Widget>[
+                // Text
+                branchCard,
+                //Icons
+                branchIcon
+              ],
+            ),
+            Stack(
+              children: <Widget>[
+                // Text
+                branchCard,
+                //Icons
+                branchIcon
+              ],
+            ),
+            Stack(
+              children: <Widget>[
+                // Text
+                branchCard,
+                //Icons
+                branchIcon
+              ],
+            ),
+          ]),
         ),
-        backgroundColor: Colors.transparent,
-        elevation: 0.0,
-        iconTheme: IconThemeData(color: Colors.black),
-      ),
-      drawer: AppDrawer(),
-      body: Container(
-        height: double.infinity,
-        margin: const EdgeInsets.symmetric(
-          vertical: 16.0,
-          horizontal: 22.0,
-        ),
-        child: ListView(padding: EdgeInsets.all(8.0), children: <Widget>[
-          Stack(
-            children: <Widget>[
-              // Text
-              branchCard,
-              //Icons
-              branchIcon
-            ],
-          ),
-          Stack(
-            children: <Widget>[
-              // Text
-              branchCard,
-              //Icons
-              branchIcon
-            ],
-          ),
-          Stack(
-            children: <Widget>[
-              // Text
-              branchCard,
-              //Icons
-              branchIcon
-            ],
-          ),
-          Stack(
-            children: <Widget>[
-              // Text
-              branchCard,
-              //Icons
-              branchIcon
-            ],
-          ),
-          Stack(
-            children: <Widget>[
-              // Text
-              branchCard,
-              //Icons
-              branchIcon
-            ],
-          ),
-        ]),
       ),
     );
   }

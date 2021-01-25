@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:infoquest_2021_final/models/branch_data.dart';
-import 'package:infoquest_2021_final/widget/branch_tiles.dart';
+import '../models/branch_data.dart';
+
+import '../widget/branch_tiles.dart';
 
 class EventsScreen extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return GridView(
