@@ -78,6 +78,7 @@ flutter:
     - assets/images/aakriti.jpg
     - assets/images/pavan.jpg
     - assets/images/deepika.jpg
+    - assets/icons/hacker.png
    
 
   # An image asset can refer to one or more resolution-specific "variants", see
