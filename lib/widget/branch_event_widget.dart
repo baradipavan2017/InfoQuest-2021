@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:infoquest_2021_final/screens/bramch_events_screen.dart';
+
 
 class BranchEventWidget extends StatelessWidget {
   final String id;
