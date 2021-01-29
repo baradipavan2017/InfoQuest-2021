@@ -11,7 +11,7 @@ class BranchEventsScreen extends StatelessWidget {
         ModalRoute.of(context).settings.arguments as Map<String, String>;
     final categoryId = routeArgs['id'];
     final categoryTitle = routeArgs['title'];
-    final categoryEvents = Task.where((event) {
+    final categoryEvents = TaskData.where((event) {
       return event.categories.contains(categoryId);
     }).toList();
     return Scaffold(
@@ -31,9 +31,9 @@ class BranchEventsScreen extends StatelessWidget {
             id: categoryEvents[index].id,
             title: categoryEvents[index].title,
             image: categoryEvents[index].image,
-            description: categoryEvents[index].description,
+            // description: categoryEvents[index].description,
             coordinator: categoryEvents[index].coordinators,
-            prize: categoryEvents[index].prize,
+            // prize: categoryEvents[index].prize,
           );
         },
         itemCount: categoryEvents.length,

@@ -6,6 +6,9 @@ import 'package:infoquest_2021_final/widget/guest_widget.dart';
 class GuestsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // for letv
+    // final double height = MediaQuery.of(context).size.height * 0.73;
+    // for oneplus
     final double height = MediaQuery.of(context).size.height * 0.8;
     return ListView(
       children: <Widget>[

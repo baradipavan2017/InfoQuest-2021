@@ -12,7 +12,7 @@ class BranchTiles extends StatelessWidget {
     Navigator.of(ctx).pushNamed(BranchEventsScreen.routeName,
         arguments: {'id': id, 'title': title});
   }
-
+// Shows the Branches on the screen "CSE IT "
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -22,7 +22,7 @@ class BranchTiles extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(15),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Image.asset(
               image,
@@ -30,7 +30,7 @@ class BranchTiles extends StatelessWidget {
               width: 50,
             ),
             SizedBox(
-              height: 5,
+              height: 8,
             ),
             Text(
               title,

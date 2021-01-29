@@ -1,6 +1,6 @@
 import './task_model.dart';
 
-const Task = const [
+const TaskData = const [
   TaskModel(
     id: 't1',
     title: 'Code Investigation',
@@ -9,7 +9,7 @@ const Task = const [
     categories: ['b1'],
     description:
         'Crack the puzzle from the given program and unveil that Sherlock in you.',
-    coordinators: ' Coordinators:Aniketh,Hitesh,Nithin',
+    coordinators: ' Coordinators:Aniketh,Hitesh',
     prize: "Prize:Double the amount you paid",
   ),
   TaskModel(
@@ -48,7 +48,7 @@ const Task = const [
       categories: ['b3'],
       description:
           'Pick the right code for output in one round and Write the code in other round with given constraints',
-      coordinators: 'Coordinators:Navya,Karunakar,Keerthi,Niveshitha,Susheeel',
+      coordinators: 'Coordinators:Navya & Karunakar',
       prize: 'Prize:250/-'),
   TaskModel(
       id: 't1',
@@ -58,7 +58,7 @@ const Task = const [
       categories: ['b3'],
       description:
           'Complete the parts of missing code and execute code to get right output',
-      coordinators: 'Coordinators:Shivam,Sandeep,Ashwitha,Vinod,Praneetha',
+      coordinators: 'Coordinators:Shivam & Sandeep',
       prize: "Prize: 150"),
   TaskModel(
       id: 't1',
@@ -68,7 +68,7 @@ const Task = const [
       categories: ['b3'],
       description:
           'A word with missing blocks is diaplayed on the screen. Guess the word within the given chances.',
-      coordinators: 'Coordinators:Shivam,Vamshi,Ahswitha',
+      coordinators: 'Coordinators:Shivam & Vamshi',
       prize: "Prize: 150"),
   TaskModel(
       id: 't1',
@@ -153,7 +153,7 @@ const Task = const [
       prize: "1st Prize: 1000/- 2nd Prize : 500/-"),
   TaskModel(
     id: 't1',
-    title: 'Paper & Poster Presentation',
+    title: 'PosterPresentation',
     image:
         'https://cdn0.iconfinder.com/data/icons/kameleon-free-pack-rounded/110/Mind-Map-Paper-512.png',
     categories: ['b6'],
@@ -188,7 +188,7 @@ const Task = const [
     categories: ['b7'],
     description:
         'Start from one end of the room,participany has to reach the other end without touching the Lasers',
-    coordinators: 'Coordinators:Sampath,Sunil,Suhas,Vinay,Vikas,Shiva,Vamshi',
+    coordinators: 'Coordinators:Sampath,Sunil,     Suhas',
     prize: "Double the amount you paid",
   ),
   TaskModel(
@@ -199,8 +199,7 @@ const Task = const [
     categories: ['b7'],
     description:
         'Two players must simuntaneously reach the destination crossing the hurdle of Landmines within 4 minutes',
-    coordinators:
-        'Coordinators:Malavika,Sahithi,Lakshmi Kanth,Goutham,Amit,Shiva Ram,Karthik,Raghuveer,Sahithi',
+    coordinators: 'Coordinators:Malavika,Sahithi',
     prize: "Prize: 100/-",
   ),
   TaskModel(
@@ -211,7 +210,7 @@ const Task = const [
     categories: ['b7'],
     description:
         'Assemble the electric components using Breadboards,resistors,LED\'s,Resistors',
-    coordinators: 'Coordinators:Akshay,Vamshi,Chandra Shekar,Sudheer',
+    coordinators: 'Coordinators:Akshay,Vamshi',
     prize: "Prize:Depends on the timing",
   ),
 ];
