@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text(
           _pages[_currentIndex]['title'],
-          style: TextStyle(color: Colors.black),
+          style: Theme.of(context).textTheme.headline6,
         ),
         backgroundColor: Colors.transparent,
         elevation: 0.0,
