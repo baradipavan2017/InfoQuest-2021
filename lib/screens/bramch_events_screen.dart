@@ -36,9 +36,9 @@ class BranchEventsScreen extends StatelessWidget {
             id: categoryEvents[index].id,
             title: categoryEvents[index].title,
             image: categoryEvents[index].image,
-            // description: categoryEvents[index].description,
+            description: categoryEvents[index].description,
             coordinator: categoryEvents[index].coordinators,
-            // prize: categoryEvents[index].prize,
+            prize: categoryEvents[index].prize,
           );
         },
         itemCount: categoryEvents.length,
