@@ -22,7 +22,7 @@ class GuestsScreen extends StatelessWidget {
                   gueData.description,
                 )).toList(),
             options: CarouselOptions(
-              autoPlay: true,
+              autoPlay: false,
               height: height,
               enlargeCenterPage: true,
               viewportFraction: 1.0,
