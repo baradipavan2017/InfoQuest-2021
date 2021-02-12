@@ -7,7 +7,7 @@
          FlutterApplication and put your custom class here. -->
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="infoquest_2021_final"
+        android:label="InfoQuest-21"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

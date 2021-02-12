@@ -1,6 +1,6 @@
 import './task_model.dart';
 
-const Task = const [
+const TaskData = const [
   TaskModel(
     id: 't1',
     title: 'Code Investigation',
@@ -9,8 +9,8 @@ const Task = const [
     categories: ['b1'],
     description:
         'Crack the puzzle from the given program and unveil that Sherlock in you.',
-    coordinators: ' Coordinators:Aniketh,Hitesh,Nithin',
-    prize: "Prize:Double the amount you paid",
+    coordinators: ' Coordinators:Aniketh,Hitesh',
+    prize: "Prize:150",
   ),
   TaskModel(
       id: 't1',
@@ -20,8 +20,8 @@ const Task = const [
       categories: ['b1'],
       description:
           'Put your guessing skills to work and solve the given puzzles',
-      coordinators: 'Coordinators:Srinidhi,Harshitha,Meghana',
-      prize: "Prize:Double the amount you paid"),
+      coordinators: 'Coordinators:Harshitha,Meghana',
+      prize: "Prize:300"),
   TaskModel(
       id: 't1',
       title: 'Brain Hunker',
@@ -30,7 +30,7 @@ const Task = const [
       categories: ['b2'],
       description: 'Find the answer from given puzzle table.',
       coordinators: 'Coordinators:Deekshitha',
-      prize: "Prize:Double the amount you paid"),
+      prize: "Prize:250"),
   TaskModel(
       id: 't1',
       title: 'The Circuit Way',
@@ -48,7 +48,7 @@ const Task = const [
       categories: ['b3'],
       description:
           'Pick the right code for output in one round and Write the code in other round with given constraints',
-      coordinators: 'Coordinators:Navya,Karunakar,Keerthi,Niveshitha,Susheeel',
+      coordinators: 'Coordinators:Navya & Karunakar',
       prize: 'Prize:250/-'),
   TaskModel(
       id: 't1',
@@ -58,7 +58,7 @@ const Task = const [
       categories: ['b3'],
       description:
           'Complete the parts of missing code and execute code to get right output',
-      coordinators: 'Coordinators:Shivam,Sandeep,Ashwitha,Vinod,Praneetha',
+      coordinators: 'Coordinators:Shivam & Sandeep',
       prize: "Prize: 150"),
   TaskModel(
       id: 't1',
@@ -68,7 +68,7 @@ const Task = const [
       categories: ['b3'],
       description:
           'A word with missing blocks is diaplayed on the screen. Guess the word within the given chances.',
-      coordinators: 'Coordinators:Shivam,Vamshi,Ahswitha',
+      coordinators: 'Coordinators:Shivam & Vamshi',
       prize: "Prize: 150"),
   TaskModel(
       id: 't1',
@@ -78,7 +78,7 @@ const Task = const [
       categories: ['b4'],
       description: 'Showcase your chasis prototype made with given material',
       coordinators: 'Coordinators:Ramu & Gaurav',
-      prize: "Prize : 200/-"),
+      prize: "Prize : 200"),
   TaskModel(
       id: 't1',
       title: 'Aero Design Challenge',
@@ -87,7 +87,7 @@ const Task = const [
       categories: ['b4'],
       description: 'Build an aeroplane model with given materials',
       coordinators: 'Coordinators:Diwakar & Prathyusha',
-      prize: "Prize: 100/-"),
+      prize: "Prize: 100"),
   TaskModel(
       id: 't1',
       title: 'Paper Presentation',
@@ -122,7 +122,7 @@ const Task = const [
       categories: ['b5'],
       description: 'Determine wave magnitude at a given time',
       coordinators: 'Coordinators:Hasini & Lavanya',
-      prize: "Double the amount you paid"),
+      prize: "Prize: 100"),
   TaskModel(
       id: 't1',
       title: 'Circuit Debugging',
@@ -131,7 +131,7 @@ const Task = const [
       categories: ['b5'],
       description: 'Complete given incomplete circuit network',
       coordinators: 'Coordinators:Swami & Nikhil',
-      prize: "50 and 80 /- based on persons"),
+      prize: "Prize: 100"),
   TaskModel(
       id: 't1',
       title: 'Defuse The Bomb',
@@ -141,7 +141,7 @@ const Task = const [
       description:
           'Participant should find the right wire from the fiven circuit and diffuse a Bulb(Just like you would diffuse a bomb)',
       coordinators: 'Coordinators:Swami & Nikhil',
-      prize: "50 and 80 /- based on persons"),
+      prize: "Prize: 100"),
   TaskModel(
       id: 't1',
       title: 'Model Expo',
@@ -150,16 +150,16 @@ const Task = const [
       categories: ['b6'],
       description: 'Present a model related to Civil Engineering',
       coordinators: 'Coordinators:Aditya',
-      prize: "1st Prize: 1000/- 2nd Prize : 500/-"),
+      prize: "Prize: 100"),
   TaskModel(
     id: 't1',
-    title: 'Paper & Poster Presentation',
+    title: 'PosterPresentation',
     image:
         'https://cdn0.iconfinder.com/data/icons/kameleon-free-pack-rounded/110/Mind-Map-Paper-512.png',
     categories: ['b6'],
     description: 'Present any Civil Engg. topic in a paper or poster',
     coordinators: 'Coordinators:Sahithi',
-    prize: "1st Prize: 500/- 2nd Prize : 300/-",
+    prize: "Prize: 100",
   ),
   TaskModel(
       id: 't1',
@@ -169,7 +169,7 @@ const Task = const [
       categories: ['b6'],
       description: 'Explain a brief Civil Engg topic with PPT',
       coordinators: 'Coordinators: Mani Teja',
-      prize: "1st Prize: 500/- 2nd Prize : 300/"),
+      prize: "Prize: 100"),
   TaskModel(
       id: 't1',
       title: 'Quick Survey',
@@ -188,8 +188,8 @@ const Task = const [
     categories: ['b7'],
     description:
         'Start from one end of the room,participany has to reach the other end without touching the Lasers',
-    coordinators: 'Coordinators:Sampath,Sunil,Suhas,Vinay,Vikas,Shiva,Vamshi',
-    prize: "Double the amount you paid",
+    coordinators: 'Coordinators:Sampath,Sunil,     Suhas',
+    prize: "Prize: 100",
   ),
   TaskModel(
     id: 't1',
@@ -199,8 +199,7 @@ const Task = const [
     categories: ['b7'],
     description:
         'Two players must simuntaneously reach the destination crossing the hurdle of Landmines within 4 minutes',
-    coordinators:
-        'Coordinators:Malavika,Sahithi,Lakshmi Kanth,Goutham,Amit,Shiva Ram,Karthik,Raghuveer,Sahithi',
+    coordinators: 'Coordinators:Malavika,Sahithi',
     prize: "Prize: 100/-",
   ),
   TaskModel(
@@ -211,7 +210,7 @@ const Task = const [
     categories: ['b7'],
     description:
         'Assemble the electric components using Breadboards,resistors,LED\'s,Resistors',
-    coordinators: 'Coordinators:Akshay,Vamshi,Chandra Shekar,Sudheer',
-    prize: "Prize:Depends on the timing",
+    coordinators: 'Coordinators:Akshay,Vamshi',
+    prize: "Prize: 100",
   ),
 ];

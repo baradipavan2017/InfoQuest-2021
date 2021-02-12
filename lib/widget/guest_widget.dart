@@ -50,7 +50,7 @@ class GuestWidget extends StatelessWidget {
                 fontSize: 20,
               ),
               textAlign: TextAlign.center,
-              softWrap: true,
+              
             ),
           ),
         ],
